@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.moiragod.app">
+    <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name="com.moira.lib.kernal.MoiraCloudApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.moiragod.ui.TransitionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ViewBigPicTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.moiragod.ui.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.moiragod.ui.menu.NavHomePageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.moiragod.ui.menu.NavAboutActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.moiragod.ui.menu.NavDownloadActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.moiragod.ui.menu.NavFeedbackActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
